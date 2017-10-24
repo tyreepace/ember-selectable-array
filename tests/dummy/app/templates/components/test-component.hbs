@@ -1,0 +1,9 @@
+<div>
+  <ul class="list-type">
+    {{#each items as |item|}}
+      {{#test-component-item item=item isSelected=isSelected}}
+        <li>{{item.name}}</li>
+      {{/test-component-item}}
+    {{/each}}
+  </ul>
+</div>
