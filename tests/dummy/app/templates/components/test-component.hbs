@@ -1,7 +1,12 @@
 <div>
   <ul class="list-type">
     {{#each items as |item|}}
-      {{#test-component-item item=item isSelected=isSelected}}
+      {{#test-component-item
+        content=items
+        item=item
+        selection=selection
+        select=(action 'select')
+      }}
         <li>{{item.name}}</li>
       {{/test-component-item}}
     {{/each}}

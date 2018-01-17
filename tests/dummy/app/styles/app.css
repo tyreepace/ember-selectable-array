@@ -6,6 +6,6 @@ li {
   padding: 1rem;
 }
 
-.active {
+.selected {
   background-color: lightskyblue;
 }

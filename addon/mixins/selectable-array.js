@@ -63,7 +63,7 @@ export default Mixin.create({
     let content = this.getActiveContent();
     let selection = get(this, '_selection');
     return selection.filter(function(item) {
-      return content.contains(item);
+      return content.includes(item);
     });
   }),
 
@@ -289,7 +289,7 @@ export default Mixin.create({
     @return {Boolean}
   */
   inSelection(obj) {
-    return get(this, '_selection').contains(obj);
+    return get(this, '_selection').includes(obj);
   },
 
   /*
